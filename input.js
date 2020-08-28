@@ -1,11 +1,3 @@
-
-const setupInput  = require('./input');
-const connect  = require('./client');
-console.log('Connecting ...');
-connect();
-setupInput();
-
-/*
 const setupInput = function() {
   const stdin = process.stdin;
   stdin.setRawMode(true);
@@ -24,7 +16,7 @@ const handleUserInput = (key) => {
     process.exit();
   }
 };
+module.exports = setupInput;
 
-setupInput();
+//setupInput();
 handleUserInput(); 
-*/
