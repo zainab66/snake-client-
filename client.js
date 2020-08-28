@@ -16,10 +16,12 @@ const connect = function() {
 
 conn.on('connect', () => {
   conn.write("Name: Zia");
-  conn.write("Move: up");
-  conn.write("Move: down");
-  conn.write("Move: left");
-  conn.write("Move: right");
+  //conn.write("Move: up");
+  //conn.write("Move: left");
+ // conn.write("Say:go long");
+  //conn.write("Move: down");
+ // conn.write("Move: left");
+//conn.write("Move: right");
 
 
 });

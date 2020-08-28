@@ -1,9 +1,22 @@
-
+/*
 const setupInput  = require('./input');
 const connect  = require('./client');
 console.log('Connecting ...');
+
+
 connect();
 setupInput();
+*/
+const connect  = require('./client');
+const setupInput  = require('./input.js');
+
+const connection = connect();
+
+console.log('Connecting ...');
+
+setupInput(connection);
+
+module.exports = { connect };
 
 /*
 const setupInput = function() {
